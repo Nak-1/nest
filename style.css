@@ -14,6 +14,11 @@ body{
     display: flex;
     justify-content: end;
 }
+.cont {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+}
 .menu{
     height: 60px;
     width: 60px;
@@ -34,11 +39,6 @@ body{
     height: 60px;
     width: 60px;
     cursor: pointer;
-}
-.cont {
-    display: flex;
-    width: 300px;
-    justify-content: space-evenly;
 }
 .bar{
     height: 5px;
@@ -144,9 +144,21 @@ body{
     bottom: 0px;
     transform: translateY(-10px);
 }
-.cont:hover + .menu-container{
-    animation: 1s ease-in-out item;
+.menu-container:hover .ex{
+    animation: 2s ease-in-out item;
+    animation-delay: 500ms;
 }
+.menu-container:hover .ex1{
+    animation: 2s ease-in-out item;
+    animation-delay: 1s;
+}
+.menu-container:hover .ex2{
+    animation: 2s ease-in-out item;
+        animation-delay: 1500ms;
+}
+/* .cont:hover + .menu-container{
+    animation: 2s ease-in-out item;
+} */
 @keyframes item {
     from{
         opacity: 0;

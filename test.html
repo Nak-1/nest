@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: blue;
+      }
+      .hovering:hover .item1 {
+        animation: 2s ease-in-out item;
+        animation-delay: 1s;
+      }
+      .hovering:hover .item2 {
+        animation: 2s ease-in-out item;
+        animation-delay: 500ms;
+      }
+      .hovering:hover .item3 {
+        animation: 2s ease-in-out item;
+        animation-delay: 1s;
+      }
+      @keyframes item {
+        from {
+          opacity: 0;
+          transform: translateX(80px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hovering">
+      <div class="item1">Hell Weorld 1</div>
+      <div class="item2">Hell Weorld 1</div>
+      <div class="item3">Hell Weorld 1</div>
+    </div>
+  </body>
+</html>
